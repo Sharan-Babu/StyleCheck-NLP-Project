@@ -1,0 +1,169 @@
+{
+  "test_cases": [
+    {
+      "input_text": "The students is studying.",
+      "expected_output": "The students are studying.",
+      "capability": "subject_verb_agreement",
+      "test_type": "minimum_functionality",
+      "description": "Basic subject-verb agreement with plural noun",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "basic"
+      }
+    },
+    {
+      "input_text": "I has been working here since yesterday.",
+      "expected_output": "I have been working here since yesterday.",
+      "capability": "subject_verb_agreement",
+      "test_type": "minimum_functionality",
+      "description": "Subject-verb agreement with auxiliary verb",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "basic"
+      }
+    },
+    {
+      "input_text": "She don't like pizza.",
+      "expected_output": "She doesn't like pizza.",
+      "capability": "subject_verb_agreement",
+      "test_type": "minimum_functionality",
+      "description": "Third person singular agreement",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "basic"
+      }
+    },
+    {
+      "input_text": "Yesterday, I go to the store.",
+      "expected_output": "Yesterday, I went to the store.",
+      "capability": "tense_consistency",
+      "test_type": "minimum_functionality",
+      "description": "Past tense with time indicator",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "basic"
+      }
+    },
+    {
+      "input_text": "I am study English for three years.",
+      "expected_output": "I have been studying English for three years.",
+      "capability": "tense_consistency",
+      "test_type": "minimum_functionality",
+      "description": "Present perfect continuous with duration",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "intermediate"
+      }
+    },
+    {
+      "input_text": "I went to store to buy apple.",
+      "expected_output": "I went to the store to buy an apple.",
+      "capability": "article_usage",
+      "test_type": "minimum_functionality",
+      "description": "Article usage with singular countable nouns",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "basic"
+      }
+    },
+    {
+      "input_text": "Despite of the rain, we continued playing.",
+      "expected_output": "Despite the rain, we continued playing.",
+      "capability": "preposition_usage",
+      "test_type": "invariance",
+      "description": "Incorrect preposition with 'despite'",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "intermediate"
+      }
+    },
+    {
+      "input_text": "He don't know nothing about it.",
+      "expected_output": "He doesn't know anything about it.",
+      "capability": "negation_handling",
+      "test_type": "negation",
+      "description": "Double negation correction",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "intermediate"
+      }
+    },
+    {
+      "input_text": "The movie was very good.",
+      "expected_output": "The movie was excellent.",
+      "capability": "vocabulary_choice",
+      "test_type": "directional",
+      "description": "Word choice improvement",
+      "metadata": {
+        "error_type": "style",
+        "difficulty": "intermediate"
+      }
+    },
+    {
+      "input_text": "He made a decision to go.",
+      "expected_output": "He decided to go.",
+      "capability": "vocabulary_choice",
+      "test_type": "directional",
+      "description": "Verbose phrase to concise verb",
+      "metadata": {
+        "error_type": "style",
+        "difficulty": "intermediate"
+      }
+    },
+    {
+      "input_text": "The man which I saw yesterday is my teacher.",
+      "expected_output": "The man whom I saw yesterday is my teacher.",
+      "capability": "complex_sentences",
+      "test_type": "invariance",
+      "description": "Relative pronoun usage",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "advanced"
+      }
+    },
+    {
+      "input_text": "If I would have known, I would have came earlier.",
+      "expected_output": "If I had known, I would have come earlier.",
+      "capability": "complex_sentences",
+      "test_type": "invariance",
+      "description": "Conditional sentence structure",
+      "metadata": {
+        "error_type": "grammar",
+        "difficulty": "advanced"
+      }
+    },
+    {
+      "input_text": "i love pizza but i hate pasta",
+      "expected_output": "I love pizza, but I hate pasta.",
+      "capability": "punctuation",
+      "test_type": "minimum_functionality",
+      "description": "Basic capitalization and punctuation",
+      "metadata": {
+        "error_type": "mechanics",
+        "difficulty": "basic"
+      }
+    },
+    {
+      "input_text": "Being that it was late we left.",
+      "expected_output": "Since it was late, we left.",
+      "capability": "vocabulary_choice",
+      "test_type": "directional",
+      "description": "Informal to formal expression",
+      "metadata": {
+        "error_type": "style",
+        "difficulty": "intermediate"
+      }
+    },
+    {
+      "input_text": "At this point in time we should proceed.",
+      "expected_output": "We should proceed now.",
+      "capability": "vocabulary_choice",
+      "test_type": "directional",
+      "description": "Wordy to concise expression",
+      "metadata": {
+        "error_type": "style",
+        "difficulty": "intermediate"
+      }
+    }
+  ]
+}

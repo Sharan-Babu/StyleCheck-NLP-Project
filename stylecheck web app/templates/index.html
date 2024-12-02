@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleCheck - Advanced Grammar and Style Correction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1>StyleCheck</h1>
+            <p class="subtitle">Advanced Grammar and Style Correction for ESL Learners</p>
+            
+            <div class="text-input-container">
+                <textarea id="input-text">I have went to the store yesterday and bought they're products. Its been a great experience, irregardless of the cost.</textarea>
+                <button id="check-button">
+                    <span class="icon">✓</span>
+                    Check Grammar and Style
+                </button>
+            </div>
+        </div>
+
+        <div class="output-section" id="output-section" style="display: none;">
+            <div class="corrected-text-container">
+                <h3>Corrected Text</h3>
+                <div id="corrected-text" class="corrected-text"></div>
+            </div>
+
+            <div class="corrections-container">
+                <h3>Corrections and Explanations</h3>
+                <div id="corrections-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

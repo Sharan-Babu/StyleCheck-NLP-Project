@@ -1,0 +1,228 @@
+:root {
+    --primary-color: #4285f4;
+    --success-color: #34a853;
+    --error-color: #ea4335;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.app-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.input-section {
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.text-input-container {
+    margin-top: 1.5rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #3367d6;
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+.results-section {
+    padding: 2rem;
+    background-color: var(--light-gray);
+}
+
+.corrected-text-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.corrected-text {
+    color: var(--success-color);
+    font-size: 1.1rem;
+}
+
+.corrections-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.correction-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.correction-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.correction-number {
+    background-color: var(--primary-color);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.original {
+    color: var(--text-color);
+}
+
+.corrected {
+    color: var(--success-color);
+}
+
+.explanation {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+.highlight-error {
+    color: var(--error-color);
+    font-weight: bold;
+    background-color: rgba(234, 67, 53, 0.1);
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+.overall-explanation {
+    margin-top: 2rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--primary-color);
+}
+
+.overall-explanation .explanation {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Button States */
+#checkButton {
+    position: relative;
+    min-width: 200px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.spinner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Loading Spinner */
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Button Loading State */
+#checkButton.loading .button-content {
+    opacity: 0;
+}
+
+#checkButton.loading .spinner-container {
+    opacity: 1;
+}

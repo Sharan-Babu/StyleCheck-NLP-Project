@@ -1,0 +1,196 @@
+{
+  "test_cases": [
+    {
+      "input_text": "The cat sleeps on the mat.",
+      "expected_output": "The cat sleeps on the mat.",
+      "capability": "length_invariance",
+      "test_type": "invariance",
+      "description": "Base sentence for length variation tests",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "length_variation"
+      }
+    },
+    {
+      "input_text": "The small brown cat sleeps peacefully on the old worn mat in the corner of the room.",
+      "expected_output": "The small brown cat sleeps peacefully on the old worn mat in the corner of the room.",
+      "capability": "length_invariance",
+      "test_type": "invariance",
+      "description": "Extended version of base sentence - should maintain correctness",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "intermediate",
+        "test_family": "length_variation"
+      }
+    },
+    {
+      "input_text": "Yesterday, I completed the task.",
+      "expected_output": "Yesterday, I completed the task.",
+      "capability": "temporal_invariance",
+      "test_type": "invariance",
+      "description": "Base sentence for temporal tests",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "temporal_variation"
+      }
+    },
+    {
+      "input_text": "Tomorrow, I will complete the task.",
+      "expected_output": "Tomorrow, I will complete the task.",
+      "capability": "temporal_invariance",
+      "test_type": "invariance",
+      "description": "Future tense version - should maintain correctness",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "temporal_variation"
+      }
+    },
+    {
+      "input_text": "The students write essays.",
+      "expected_output": "The students write essays.",
+      "capability": "name_entity_invariance",
+      "test_type": "invariance",
+      "description": "Base sentence for NER variation",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "ner_variation"
+      }
+    },
+    {
+      "input_text": "The professors write papers.",
+      "expected_output": "The professors write papers.",
+      "capability": "name_entity_invariance",
+      "test_type": "invariance",
+      "description": "NER substitution - should maintain correctness",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "ner_variation"
+      }
+    },
+    {
+      "input_text": "The book is interesting.",
+      "expected_output": "The book is interesting.",
+      "capability": "location_invariance",
+      "test_type": "invariance",
+      "description": "Base sentence for location tests",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "location_variation"
+      }
+    },
+    {
+      "input_text": "The book on the shelf is interesting.",
+      "expected_output": "The book on the shelf is interesting.",
+      "capability": "location_invariance",
+      "test_type": "invariance",
+      "description": "Added location - should maintain correctness",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "intermediate",
+        "test_family": "location_variation"
+      }
+    },
+    {
+      "input_text": "She likes chocolate.",
+      "expected_output": "She likes chocolate.",
+      "capability": "gender_invariance",
+      "test_type": "invariance",
+      "description": "Base sentence for gender tests",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "gender_variation"
+      }
+    },
+    {
+      "input_text": "He likes chocolate.",
+      "expected_output": "He likes chocolate.",
+      "capability": "gender_invariance",
+      "test_type": "invariance",
+      "description": "Gender variation - should maintain correctness",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "gender_variation"
+      }
+    },
+    {
+      "input_text": "The meeting starts at 3 PM.",
+      "expected_output": "The meeting starts at 3 PM.",
+      "capability": "number_invariance",
+      "test_type": "invariance",
+      "description": "Base sentence for number tests",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "number_variation"
+      }
+    },
+    {
+      "input_text": "The meeting starts at 4 PM.",
+      "expected_output": "The meeting starts at 4 PM.",
+      "capability": "number_invariance",
+      "test_type": "invariance",
+      "description": "Number substitution - should maintain correctness",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "number_variation"
+      }
+    },
+    {
+      "input_text": "The food tastes good.",
+      "expected_output": "The food tastes good.",
+      "capability": "polarity_invariance",
+      "test_type": "invariance",
+      "description": "Base sentence for polarity tests",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "polarity_variation"
+      }
+    },
+    {
+      "input_text": "The food doesn't taste bad.",
+      "expected_output": "The food doesn't taste bad.",
+      "capability": "polarity_invariance",
+      "test_type": "invariance",
+      "description": "Polarity variation - should maintain semantic meaning",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "intermediate",
+        "test_family": "polarity_variation"
+      }
+    },
+    {
+      "input_text": "The system works well.",
+      "expected_output": "The system works well.",
+      "capability": "synonym_invariance",
+      "test_type": "invariance",
+      "description": "Base sentence for synonym tests",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "basic",
+        "test_family": "synonym_variation"
+      }
+    },
+    {
+      "input_text": "The system functions properly.",
+      "expected_output": "The system functions properly.",
+      "capability": "synonym_invariance",
+      "test_type": "invariance",
+      "description": "Synonym substitution - should maintain correctness",
+      "metadata": {
+        "error_type": "none",
+        "difficulty": "intermediate",
+        "test_family": "synonym_variation"
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "results": [
+    {
+      "input": "The students is studying.",
+      "expected": "The students are studying.",
+      "actual": "The students are studying.",
+      "passed": true,
+      "capability": "subject_verb_agreement",
+      "test_type": "minimum_functionality",
+      "description": "Basic subject-verb agreement with plural noun"
+    },
+    {
+      "input": "I has been working here since yesterday.",
+      "expected": "I have been working here since yesterday.",
+      "actual": "I have been working here since yesterday.",
+      "passed": true,
+      "capability": "subject_verb_agreement",
+      "test_type": "minimum_functionality",
+      "description": "Subject-verb agreement with auxiliary verb"
+    },
+    {
+      "input": "She don't like pizza.",
+      "expected": "She doesn't like pizza.",
+      "actual": "She doesn't like pizza.",
+      "passed": true,
+      "capability": "subject_verb_agreement",
+      "test_type": "minimum_functionality",
+      "description": "Third person singular agreement"
+    },
+    {
+      "input": "Yesterday, I go to the store.",
+      "expected": "Yesterday, I went to the store.",
+      "actual": "Yesterday, I went to the store.",
+      "passed": true,
+      "capability": "tense_consistency",
+      "test_type": "minimum_functionality",
+      "description": "Past tense with time indicator"
+    },
+    {
+      "input": "I am study English for three years.",
+      "expected": "I have been studying English for three years.",
+      "actual": "I have been studying English for three years.",
+      "passed": true,
+      "capability": "tense_consistency",
+      "test_type": "minimum_functionality",
+      "description": "Present perfect continuous with duration"
+    },
+    {
+      "input": "I went to store to buy apple.",
+      "expected": "I went to the store to buy an apple.",
+      "actual": "I went to the store to buy an apple.",
+      "passed": true,
+      "capability": "article_usage",
+      "test_type": "minimum_functionality",
+      "description": "Article usage with singular countable nouns"
+    },
+    {
+      "input": "Despite of the rain, we continued playing.",
+      "expected": "Despite the rain, we continued playing.",
+      "actual": "Despite the rain, we continued playing.",
+      "passed": true,
+      "capability": "preposition_usage",
+      "test_type": "invariance",
+      "description": "Incorrect preposition with 'despite'"
+    },
+    {
+      "input": "He don't know nothing about it.",
+      "expected": "He doesn't know anything about it.",
+      "actual": "He doesn't know anything about it.",
+      "passed": true,
+      "capability": "negation_handling",
+      "test_type": "negation",
+      "description": "Double negation correction"
+    },
+    {
+      "input": "The movie was very good.",
+      "expected": "The movie was excellent.",
+      "actual": "The movie was excellent.",
+      "passed": true,
+      "capability": "vocabulary_choice",
+      "test_type": "directional",
+      "description": "Word choice improvement"
+    },
+    {
+      "input": "He made a decision to go.",
+      "expected": "He decided to go.",
+      "actual": "He decided to go.",
+      "passed": true,
+      "capability": "vocabulary_choice",
+      "test_type": "directional",
+      "description": "Verbose phrase to concise verb"
+    },
+    {
+      "input": "The man which I saw yesterday is my teacher.",
+      "expected": "The man whom I saw yesterday is my teacher.",
+      "actual": "The man whom I saw yesterday is my teacher.",
+      "passed": true,
+      "capability": "complex_sentences",
+      "test_type": "invariance",
+      "description": "Relative pronoun usage"
+    },
+    {
+      "input": "If I would have known, I would have came earlier.",
+      "expected": "If I had known, I would have come earlier.",
+      "actual": "If I had known, I would have come earlier.",
+      "passed": true,
+      "capability": "complex_sentences",
+      "test_type": "invariance",
+      "description": "Conditional sentence structure"
+    },
+    {
+      "input": "i love pizza but i hate pasta",
+      "expected": "I love pizza, but I hate pasta.",
+      "actual": "I love pizza, but I hate pasta.",
+      "passed": true,
+      "capability": "punctuation",
+      "test_type": "minimum_functionality",
+      "description": "Basic capitalization and punctuation"
+    },
+    {
+      "input": "Being that it was late we left.",
+      "expected": "Since it was late, we left.",
+      "actual": "Since it was late, we left.",
+      "passed": true,
+      "capability": "vocabulary_choice",
+      "test_type": "directional",
+      "description": "Informal to formal expression"
+    },
+    {
+      "input": "At this point in time we should proceed.",
+      "expected": "We should proceed now.",
+      "actual": "We should proceed now.",
+      "passed": true,
+      "capability": "vocabulary_choice",
+      "test_type": "directional",
+      "description": "Wordy to concise expression"
+    }
+  ]
+}

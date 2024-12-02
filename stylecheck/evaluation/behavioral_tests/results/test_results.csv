@@ -1,0 +1,16 @@
+input,expected,actual,passed,capability,test_type,description
+The students is studying.,The students are studying.,The students are studying.,True,subject_verb_agreement,minimum_functionality,Basic subject-verb agreement with plural noun
+I has been working here since yesterday.,I have been working here since yesterday.,I have been working here since yesterday.,True,subject_verb_agreement,minimum_functionality,Subject-verb agreement with auxiliary verb
+She don't like pizza.,She doesn't like pizza.,She doesn't like pizza.,True,subject_verb_agreement,minimum_functionality,Third person singular agreement
+"Yesterday, I go to the store.","Yesterday, I went to the store.","Yesterday, I went to the store.",True,tense_consistency,minimum_functionality,Past tense with time indicator
+I am study English for three years.,I have been studying English for three years.,I have been studying English for three years.,True,tense_consistency,minimum_functionality,Present perfect continuous with duration
+I went to store to buy apple.,I went to the store to buy an apple.,I went to the store to buy an apple.,True,article_usage,minimum_functionality,Article usage with singular countable nouns
+"Despite of the rain, we continued playing.","Despite the rain, we continued playing.","Despite the rain, we continued playing.",True,preposition_usage,invariance,Incorrect preposition with 'despite'
+He don't know nothing about it.,He doesn't know anything about it.,He doesn't know anything about it.,True,negation_handling,negation,Double negation correction
+The movie was very good.,The movie was excellent.,The movie was excellent.,True,vocabulary_choice,directional,Word choice improvement
+He made a decision to go.,He decided to go.,He decided to go.,True,vocabulary_choice,directional,Verbose phrase to concise verb
+The man which I saw yesterday is my teacher.,The man whom I saw yesterday is my teacher.,The man whom I saw yesterday is my teacher.,True,complex_sentences,invariance,Relative pronoun usage
+"If I would have known, I would have came earlier.","If I had known, I would have come earlier.","If I had known, I would have come earlier.",True,complex_sentences,invariance,Conditional sentence structure
+i love pizza but i hate pasta,"I love pizza, but I hate pasta.","I love pizza, but I hate pasta.",True,punctuation,minimum_functionality,Basic capitalization and punctuation
+Being that it was late we left.,"Since it was late, we left.","Since it was late, we left.",True,vocabulary_choice,directional,Informal to formal expression
+At this point in time we should proceed.,We should proceed now.,We should proceed now.,True,vocabulary_choice,directional,Wordy to concise expression

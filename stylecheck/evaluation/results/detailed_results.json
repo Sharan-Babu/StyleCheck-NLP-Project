@@ -1,0 +1,2788 @@
+{
+  "test_cases": [
+    {
+      "index": 0,
+      "category": "simple_grammar",
+      "original": {
+        "text": "I have went to the store yesterday.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.5,
+          "flesch_reading_ease": 89.75,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.6,
+          "coleman_liau_index": 3.26,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 0.35
+        }
+      },
+      "ground_truth": {
+        "text": "I went to the store yesterday.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 90.77,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.2,
+          "coleman_liau_index": 2.37,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "t5": {
+        "correction": "grammar: I have gone to the store yesterday.",
+        "gleu": 0.4230769230769231,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 4.1,
+          "flesch_reading_ease": 80.28,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.4,
+          "coleman_liau_index": 5.76,
+          "linsear_write_formula": 4.0,
+          "dale_chall_readability_score": 6.01
+        }
+      },
+      "stylecheck": {
+        "correction": "I went to the store yesterday.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 90.77,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.2,
+          "coleman_liau_index": 2.37,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 0.3
+        }
+      }
+    },
+    {
+      "index": 1,
+      "category": "simple_grammar",
+      "original": {
+        "text": "She don't like pizza.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.8,
+          "coleman_liau_index": 0.0,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "ground_truth": {
+        "text": "She doesn't like pizza.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.1,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "t5": {
+        "correction": "grammatical: She don't like pizza.",
+        "gleu": 0.2857142857142857,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 7.6,
+          "flesch_reading_ease": 49.48,
+          "gunning_fog": 10.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 9.3,
+          "coleman_liau_index": 9.6,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 10.2
+        }
+      },
+      "stylecheck": {
+        "correction": "She doesn't like pizza.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.1,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      }
+    },
+    {
+      "index": 2,
+      "category": "simple_grammar",
+      "original": {
+        "text": "The cats is sleeping.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.8,
+          "coleman_liau_index": 1.45,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 11.73
+        }
+      },
+      "ground_truth": {
+        "text": "The cats are sleeping.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 11.73
+        }
+      },
+      "t5": {
+        "correction": "entailment",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 20.2,
+          "flesch_reading_ease": -47.99,
+          "gunning_fog": 40.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 26.2,
+          "coleman_liau_index": 12.6,
+          "linsear_write_formula": 0.5,
+          "dale_chall_readability_score": 19.48
+        }
+      },
+      "stylecheck": {
+        "correction": "The cats are sleeping.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 11.73
+        }
+      }
+    },
+    {
+      "index": 3,
+      "category": "simple_grammar",
+      "original": {
+        "text": "Me and him went shopping.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 100.24,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.48,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "ground_truth": {
+        "text": "He and I went shopping.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 100.24,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.1,
+          "coleman_liau_index": -0.85,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "t5": {
+        "correction": "grammar: Me and him went shopping.",
+        "gleu": 0.2222222222222222,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 90.77,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 5.27,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 6.57
+        }
+      },
+      "stylecheck": {
+        "correction": "He and I went shopping.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 100.24,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.1,
+          "coleman_liau_index": -0.85,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      }
+    },
+    {
+      "index": 4,
+      "category": "simple_grammar",
+      "original": {
+        "text": "I seen that movie last week.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.5,
+          "flesch_reading_ease": 116.15,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.5,
+          "coleman_liau_index": 0.45,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "ground_truth": {
+        "text": "I saw that movie last week.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.5,
+          "flesch_reading_ease": 116.15,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.2,
+          "coleman_liau_index": -0.54,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "t5": {
+        "correction": "grammar: I saw that movie last week.",
+        "gleu": 0.8181818181818182,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.1,
+          "flesch_reading_ease": 106.67,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.3,
+          "coleman_liau_index": 3.26,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 6.24
+        }
+      },
+      "stylecheck": {
+        "correction": "I saw that movie last week.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.5,
+          "flesch_reading_ease": 116.15,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.2,
+          "coleman_liau_index": -0.54,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      }
+    },
+    {
+      "index": 5,
+      "category": "simple_grammar",
+      "original": {
+        "text": "They was happy about it.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 100.24,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.2,
+          "coleman_liau_index": 0.32,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "ground_truth": {
+        "text": "They were happy about it.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 100.24,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.48,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "t5": {
+        "correction": "grammar: They was happy about it.",
+        "gleu": 0.3888888888888889,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 90.77,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.6,
+          "coleman_liau_index": 4.28,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 6.57
+        }
+      },
+      "stylecheck": {
+        "correction": "They were happy about it.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 100.24,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.48,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      }
+    },
+    {
+      "index": 6,
+      "category": "simple_grammar",
+      "original": {
+        "text": "He don't know nothing.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 1.45,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "ground_truth": {
+        "text": "He doesn't know anything.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 6.5,
+          "coleman_liau_index": 5.8,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "t5": {
+        "correction": "grammatical: He don't know nothing.",
+        "gleu": 0.14285714285714285,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 7.6,
+          "flesch_reading_ease": 49.48,
+          "gunning_fog": 10.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 10.3,
+          "coleman_liau_index": 10.76,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 7.04
+        }
+      },
+      "stylecheck": {
+        "correction": "He doesn't know anything.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 6.5,
+          "coleman_liau_index": 5.8,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      }
+    },
+    {
+      "index": 7,
+      "category": "simple_grammar",
+      "original": {
+        "text": "The book have many pages.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.9,
+          "flesch_reading_ease": 117.16,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.48,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 7.04
+        }
+      },
+      "ground_truth": {
+        "text": "The book has many pages.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.9,
+          "flesch_reading_ease": 117.16,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.2,
+          "coleman_liau_index": 0.32,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 7.04
+        }
+      },
+      "t5": {
+        "correction": "The book have many pages.",
+        "gleu": 0.42857142857142855,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.9,
+          "flesch_reading_ease": 117.16,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.48,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 7.04
+        }
+      },
+      "stylecheck": {
+        "correction": "The book has many pages.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.9,
+          "flesch_reading_ease": 117.16,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.2,
+          "coleman_liau_index": 0.32,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 7.04
+        }
+      }
+    },
+    {
+      "index": 8,
+      "category": "complex_grammar",
+      "original": {
+        "text": "If I would have known, I would have came earlier.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.5,
+          "flesch_reading_ease": 95.17,
+          "gunning_fog": 8.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.4,
+          "coleman_liau_index": 3.28,
+          "linsear_write_formula": 5.0,
+          "dale_chall_readability_score": 5.71
+        }
+      },
+      "ground_truth": {
+        "text": "If I had known, I would have come earlier.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 96.18,
+          "gunning_fog": 8.04,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.59,
+          "linsear_write_formula": 4.5,
+          "dale_chall_readability_score": 5.84
+        }
+      },
+      "t5": {
+        "correction": "False",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": -16.41,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "If I had known, I would have come earlier.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 96.18,
+          "gunning_fog": 8.04,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.59,
+          "linsear_write_formula": 4.5,
+          "dale_chall_readability_score": 5.84
+        }
+      }
+    },
+    {
+      "index": 9,
+      "category": "complex_grammar",
+      "original": {
+        "text": "Not only he was late, but also he forgot the documents.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.4,
+          "flesch_reading_ease": 68.77,
+          "gunning_fog": 8.04,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.3,
+          "coleman_liau_index": 4.21,
+          "linsear_write_formula": 5.5,
+          "dale_chall_readability_score": 5.62
+        }
+      },
+      "ground_truth": {
+        "text": "Not only was he late, but he also forgot the documents.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.4,
+          "flesch_reading_ease": 68.77,
+          "gunning_fog": 8.04,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.3,
+          "coleman_liau_index": 4.21,
+          "linsear_write_formula": 5.5,
+          "dale_chall_readability_score": 5.62
+        }
+      },
+      "t5": {
+        "correction": "grammar: not only he was late, but he forgot the documents.",
+        "gleu": 0.4473684210526316,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.4,
+          "flesch_reading_ease": 68.77,
+          "gunning_fog": 8.04,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.0,
+          "coleman_liau_index": 5.78,
+          "linsear_write_formula": 5.5,
+          "dale_chall_readability_score": 7.05
+        }
+      },
+      "stylecheck": {
+        "correction": "Not only was he late, but he also forgot the documents.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.4,
+          "flesch_reading_ease": 68.77,
+          "gunning_fog": 8.04,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.3,
+          "coleman_liau_index": 4.21,
+          "linsear_write_formula": 5.5,
+          "dale_chall_readability_score": 5.62
+        }
+      }
+    },
+    {
+      "index": 10,
+      "category": "complex_grammar",
+      "original": {
+        "text": "Despite of the rain, we continued playing.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.0,
+          "flesch_reading_ease": 64.37,
+          "gunning_fog": 8.51,
+          "smog_index": 0.0,
+          "automated_readability_index": 6.3,
+          "coleman_liau_index": 8.24,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 10.75
+        }
+      },
+      "ground_truth": {
+        "text": "Despite the rain, we continued playing.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.8,
+          "flesch_reading_ease": 56.93,
+          "gunning_fog": 9.07,
+          "smog_index": 0.0,
+          "automated_readability_index": 8.3,
+          "coleman_liau_index": 10.08,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 11.83
+        }
+      },
+      "t5": {
+        "correction": "True",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -22.21,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "Despite the rain, we continued playing.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.8,
+          "flesch_reading_ease": 56.93,
+          "gunning_fog": 9.07,
+          "smog_index": 0.0,
+          "automated_readability_index": 8.3,
+          "coleman_liau_index": 10.08,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 11.83
+        }
+      }
+    },
+    {
+      "index": 11,
+      "category": "complex_grammar",
+      "original": {
+        "text": "The man which I saw yesterday is my teacher.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.3,
+          "flesch_reading_ease": 87.72,
+          "gunning_fog": 3.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.9,
+          "coleman_liau_index": 3.51,
+          "linsear_write_formula": 4.5,
+          "dale_chall_readability_score": 0.45
+        }
+      },
+      "ground_truth": {
+        "text": "The man whom I saw yesterday is my teacher.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.3,
+          "flesch_reading_ease": 87.72,
+          "gunning_fog": 3.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.4,
+          "coleman_liau_index": 2.87,
+          "linsear_write_formula": 4.5,
+          "dale_chall_readability_score": 0.45
+        }
+      },
+      "t5": {
+        "correction": "False",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": -16.41,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "The man who I saw yesterday is my teacher.",
+        "gleu": 0.7,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.3,
+          "flesch_reading_ease": 87.72,
+          "gunning_fog": 3.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 2.23,
+          "linsear_write_formula": 4.5,
+          "dale_chall_readability_score": 0.45
+        }
+      }
+    },
+    {
+      "index": 12,
+      "category": "complex_grammar",
+      "original": {
+        "text": "I've been working here since three years.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.1,
+          "flesch_reading_ease": 106.67,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.6,
+          "coleman_liau_index": 7.37,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 8.5
+        }
+      },
+      "ground_truth": {
+        "text": "I've been working here for three years.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.1,
+          "flesch_reading_ease": 106.67,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 5.75,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 8.5
+        }
+      },
+      "t5": {
+        "correction": "grammar: I've been working here since three years.",
+        "gleu": 0.5,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 88.74,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 7.9,
+          "coleman_liau_index": 9.35,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 9.95
+        }
+      },
+      "stylecheck": {
+        "correction": "I have been working here for three years.",
+        "gleu": 0.6923076923076923,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 105.66,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": 4.31,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 7.98
+        }
+      }
+    },
+    {
+      "index": 13,
+      "category": "complex_grammar",
+      "original": {
+        "text": "She told to me about her problems.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.1,
+          "flesch_reading_ease": 106.67,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 2.44,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 6.24
+        }
+      },
+      "ground_truth": {
+        "text": "She told me about her problems.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.0,
+          "coleman_liau_index": 3.35,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 6.57
+        }
+      },
+      "t5": {
+        "correction": "grammatical errors: She told to me about her problems.",
+        "gleu": 0.43333333333333335,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.8,
+          "flesch_reading_ease": 62.34,
+          "gunning_fog": 8.04,
+          "smog_index": 0.0,
+          "automated_readability_index": 7.1,
+          "coleman_liau_index": 9.31,
+          "linsear_write_formula": 4.5,
+          "dale_chall_readability_score": 9.35
+        }
+      },
+      "stylecheck": {
+        "correction": "She told me about her problems.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.0,
+          "coleman_liau_index": 3.35,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 6.57
+        }
+      }
+    },
+    {
+      "index": 14,
+      "category": "complex_grammar",
+      "original": {
+        "text": "The children which play in the park are happy.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 96.18,
+          "gunning_fog": 3.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 4.78,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 0.45
+        }
+      },
+      "ground_truth": {
+        "text": "The children who play in the park are happy.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 96.18,
+          "gunning_fog": 3.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.9,
+          "coleman_liau_index": 3.51,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 0.45
+        }
+      },
+      "t5": {
+        "correction": "False",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": -16.41,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "The children who are playing in the park are happy.",
+        "gleu": 0.5882352941176471,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 86.71,
+          "gunning_fog": 4.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.4,
+          "coleman_liau_index": 5.02,
+          "linsear_write_formula": 4.0,
+          "dale_chall_readability_score": 5.71
+        }
+      }
+    },
+    {
+      "index": 15,
+      "category": "complex_grammar",
+      "original": {
+        "text": "I would have went if I had known.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -0.8,
+          "flesch_reading_ease": 114.12,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -1.5,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 0.4
+        }
+      },
+      "ground_truth": {
+        "text": "I would have gone if I had known.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -0.8,
+          "flesch_reading_ease": 114.12,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -1.5,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 0.4
+        }
+      },
+      "t5": {
+        "correction": ". - I would have gone if I had known.",
+        "gleu": 0.7647058823529411,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -0.8,
+          "flesch_reading_ease": 114.12,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.0,
+          "coleman_liau_index": -1.5,
+          "linsear_write_formula": 4.0,
+          "dale_chall_readability_score": 0.4
+        }
+      },
+      "stylecheck": {
+        "correction": "I would have gone if I had known.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -0.8,
+          "flesch_reading_ease": 114.12,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -1.5,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 0.4
+        }
+      }
+    },
+    {
+      "index": 16,
+      "category": "style_word_choice",
+      "original": {
+        "text": "He made a decision to go.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 90.77,
+          "gunning_fog": 9.07,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.8,
+          "coleman_liau_index": -2.46,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 6.57
+        }
+      },
+      "ground_truth": {
+        "text": "He decided to go.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 11.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -3.0,
+          "coleman_liau_index": -4.36,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "t5": {
+        "correction": "grammar: He made a decision to go.",
+        "gleu": 0.18181818181818182,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 81.29,
+          "gunning_fog": 8.51,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.57,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 8.5
+        }
+      },
+      "stylecheck": {
+        "correction": "He decided to go.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 11.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -3.0,
+          "coleman_liau_index": -4.36,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 7.78
+        }
+      }
+    },
+    {
+      "index": 17,
+      "category": "style_word_choice",
+      "original": {
+        "text": "The movie was very good.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.9,
+          "flesch_reading_ease": 117.16,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.2,
+          "coleman_liau_index": 0.32,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "ground_truth": {
+        "text": "The movie was excellent.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 11.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.3,
+          "coleman_liau_index": 5.8,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "t5": {
+        "correction": "grammar: The movie was very good.",
+        "gleu": 0.3333333333333333,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.6,
+          "coleman_liau_index": 4.28,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 6.57
+        }
+      },
+      "stylecheck": {
+        "correction": "The movie was excellent.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 11.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.3,
+          "coleman_liau_index": 5.8,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 7.78
+        }
+      }
+    },
+    {
+      "index": 18,
+      "category": "style_word_choice",
+      "original": {
+        "text": "She did a review of the book.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.1,
+          "flesch_reading_ease": 106.67,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.5,
+          "coleman_liau_index": -1.74,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 0.35
+        }
+      },
+      "ground_truth": {
+        "text": "She reviewed the book.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "t5": {
+        "correction": "grammar: She did a review of the book.",
+        "gleu": 0.15384615384615385,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 88.74,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.8,
+          "coleman_liau_index": 1.41,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 6.01
+        }
+      },
+      "stylecheck": {
+        "correction": "She reviewed the book.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      }
+    },
+    {
+      "index": 19,
+      "category": "style_word_choice",
+      "original": {
+        "text": "In spite of the fact that it was raining.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 104.64,
+          "gunning_fog": 3.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.4,
+          "coleman_liau_index": 1.59,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 7.59
+        }
+      },
+      "ground_truth": {
+        "text": "Although it was raining.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.3,
+          "coleman_liau_index": 5.8,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 11.73
+        }
+      },
+      "t5": {
+        "correction": "grammar: despite the fact that it was raining.",
+        "gleu": 0.23076923076923078,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 4.1,
+          "flesch_reading_ease": 80.28,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.6,
+          "coleman_liau_index": 7.21,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 9.95
+        }
+      },
+      "stylecheck": {
+        "correction": "In spite of the fact that it was raining, we went to the park.",
+        "gleu": 0.06,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 99.57,
+          "gunning_fog": 5.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.1,
+          "coleman_liau_index": 1.62,
+          "linsear_write_formula": 6.0,
+          "dale_chall_readability_score": 6.59
+        }
+      }
+    },
+    {
+      "index": 20,
+      "category": "style_word_choice",
+      "original": {
+        "text": "At this point in time we should proceed.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 105.66,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.0,
+          "coleman_liau_index": 3.55,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 6.01
+        }
+      },
+      "ground_truth": {
+        "text": "We should proceed now.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "t5": {
+        "correction": ":",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -15.7,
+          "flesch_reading_ease": 206.84,
+          "gunning_fog": 0.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.0,
+          "coleman_liau_index": -15.81,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.0
+        }
+      },
+      "stylecheck": {
+        "correction": "Now we should proceed.",
+        "gleu": 0.3,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      }
+    },
+    {
+      "index": 21,
+      "category": "style_word_choice",
+      "original": {
+        "text": "He was in possession of the key.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.5,
+          "flesch_reading_ease": 89.75,
+          "gunning_fog": 8.51,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.6,
+          "coleman_liau_index": 0.76,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 6.24
+        }
+      },
+      "ground_truth": {
+        "text": "He had the key.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -2.3,
+          "flesch_reading_ease": 118.18,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -5.4,
+          "coleman_liau_index": -7.26,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "t5": {
+        "correction": "grammar: He was in possession of the key.",
+        "gleu": 0.15384615384615385,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 4.1,
+          "flesch_reading_ease": 80.28,
+          "gunning_fog": 8.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": 3.55,
+          "linsear_write_formula": 4.0,
+          "dale_chall_readability_score": 7.98
+        }
+      },
+      "stylecheck": {
+        "correction": "He had the key.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -2.3,
+          "flesch_reading_ease": 118.18,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -5.4,
+          "coleman_liau_index": -7.26,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      }
+    },
+    {
+      "index": 22,
+      "category": "style_word_choice",
+      "original": {
+        "text": "They came to the realization that.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 4.5,
+          "flesch_reading_ease": 73.85,
+          "gunning_fog": 9.07,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 6.25,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 6.57
+        }
+      },
+      "ground_truth": {
+        "text": "They realized that.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.6,
+          "flesch_reading_ease": 59.97,
+          "gunning_fog": 14.53,
+          "smog_index": 0.0,
+          "automated_readability_index": 6.8,
+          "coleman_liau_index": 5.35,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 9.05
+        }
+      },
+      "t5": {
+        "correction": "grammar: They came to the realization that.",
+        "gleu": 0.09090909090909091,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.0,
+          "flesch_reading_ease": 64.37,
+          "gunning_fog": 8.51,
+          "smog_index": 0.0,
+          "automated_readability_index": 7.0,
+          "coleman_liau_index": 9.06,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 8.5
+        }
+      },
+      "stylecheck": {
+        "correction": "They came to the realization that they were lost.",
+        "gleu": 0.03333333333333333,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.3,
+          "flesch_reading_ease": 87.72,
+          "gunning_fog": 8.04,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.5,
+          "coleman_liau_index": 6.7,
+          "linsear_write_formula": 4.5,
+          "dale_chall_readability_score": 5.84
+        }
+      }
+    },
+    {
+      "index": 23,
+      "category": "style_word_choice",
+      "original": {
+        "text": "Make an improvement to the system.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 4.5,
+          "flesch_reading_ease": 73.85,
+          "gunning_fog": 9.07,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 6.25,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 9.2
+        }
+      },
+      "ground_truth": {
+        "text": "Improve the system.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.6,
+          "flesch_reading_ease": 59.97,
+          "gunning_fog": 1.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 6.8,
+          "coleman_liau_index": 5.35,
+          "linsear_write_formula": 0.5,
+          "dale_chall_readability_score": 9.05
+        }
+      },
+      "t5": {
+        "correction": "Make an improvement to the system.",
+        "gleu": 0.16666666666666666,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 4.5,
+          "flesch_reading_ease": 73.85,
+          "gunning_fog": 9.07,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 6.25,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 9.2
+        }
+      },
+      "stylecheck": {
+        "correction": "Improve the system.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.6,
+          "flesch_reading_ease": 59.97,
+          "gunning_fog": 1.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 6.8,
+          "coleman_liau_index": 5.35,
+          "linsear_write_formula": 0.5,
+          "dale_chall_readability_score": 9.05
+        }
+      }
+    },
+    {
+      "index": 24,
+      "category": "simple_grammar",
+      "original": {
+        "text": "There is many problems to solve.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.8,
+          "coleman_liau_index": 4.28,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 9.2
+        }
+      },
+      "ground_truth": {
+        "text": "There are many problems to solve.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.6,
+          "coleman_liau_index": 5.27,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 9.2
+        }
+      },
+      "t5": {
+        "correction": "grammar: There are many problems to solve.",
+        "gleu": 0.8181818181818182,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.5,
+          "flesch_reading_ease": 89.75,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 6.3,
+          "coleman_liau_index": 8.24,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 10.75
+        }
+      },
+      "stylecheck": {
+        "correction": "There are many problems to solve.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.6,
+          "coleman_liau_index": 5.27,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 9.2
+        }
+      }
+    },
+    {
+      "index": 25,
+      "category": "simple_grammar",
+      "original": {
+        "text": "Each of the students have finished.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 90.77,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.1,
+          "coleman_liau_index": 7.18,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 9.2
+        }
+      },
+      "ground_truth": {
+        "text": "Each of the students has finished.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 90.77,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 6.25,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 9.2
+        }
+      },
+      "t5": {
+        "correction": "grammar: Each of the students have finished.",
+        "gleu": 0.5,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 81.29,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 7.6,
+          "coleman_liau_index": 9.87,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 10.75
+        }
+      },
+      "stylecheck": {
+        "correction": "Each of the students has finished.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 90.77,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 6.25,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 9.2
+        }
+      }
+    },
+    {
+      "index": 26,
+      "category": "complex_grammar",
+      "original": {
+        "text": "The data which was collected show that.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 81.29,
+          "gunning_fog": 8.51,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 6.56,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 8.5
+        }
+      },
+      "ground_truth": {
+        "text": "The data that were collected show that.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 81.29,
+          "gunning_fog": 8.51,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 6.56,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 8.5
+        }
+      },
+      "t5": {
+        "correction": "False",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": -16.41,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "The data that were collected shows that.",
+        "gleu": 0.6818181818181818,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 81.29,
+          "gunning_fog": 8.51,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.0,
+          "coleman_liau_index": 7.37,
+          "linsear_write_formula": 3.5,
+          "dale_chall_readability_score": 10.75
+        }
+      }
+    },
+    {
+      "index": 27,
+      "category": "complex_grammar",
+      "original": {
+        "text": "Being that it was late, we left.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.1,
+          "flesch_reading_ease": 106.67,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.6,
+          "coleman_liau_index": -0.06,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 0.35
+        }
+      },
+      "ground_truth": {
+        "text": "Since it was late, we left.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.5,
+          "flesch_reading_ease": 116.15,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.2,
+          "coleman_liau_index": -1.53,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "t5": {
+        "correction": "entailment",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 20.2,
+          "flesch_reading_ease": -47.99,
+          "gunning_fog": 40.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 26.2,
+          "coleman_liau_index": 12.6,
+          "linsear_write_formula": 0.5,
+          "dale_chall_readability_score": 19.48
+        }
+      },
+      "stylecheck": {
+        "correction": "Since it was late, we left.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.5,
+          "flesch_reading_ease": 116.15,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.2,
+          "coleman_liau_index": -1.53,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      }
+    },
+    {
+      "index": 28,
+      "category": "style_word_choice",
+      "original": {
+        "text": "Due to the fact that he was late.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -0.8,
+          "flesch_reading_ease": 114.12,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -1.5,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 0.4
+        }
+      },
+      "ground_truth": {
+        "text": "Because he was late.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.6,
+          "coleman_liau_index": 0.0,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "t5": {
+        "correction": "False",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": -16.41,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "Because he was late, he missed the meeting.",
+        "gleu": 0.23076923076923078,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 88.74,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.8,
+          "coleman_liau_index": 5.0,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 6.01
+        }
+      }
+    },
+    {
+      "index": 29,
+      "category": "style_word_choice",
+      "original": {
+        "text": "Has the ability to perform.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.2,
+          "flesch_reading_ease": 66.4,
+          "gunning_fog": 10.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.7,
+          "coleman_liau_index": 3.8,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 10.2
+        }
+      },
+      "ground_truth": {
+        "text": "Can perform.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 77.91,
+          "gunning_fog": 0.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.5,
+          "coleman_liau_index": -1.61,
+          "linsear_write_formula": 0.0,
+          "dale_chall_readability_score": 11.63
+        }
+      },
+      "t5": {
+        "correction": "Has the ability to perform.",
+        "gleu": 0.07142857142857142,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.2,
+          "flesch_reading_ease": 66.4,
+          "gunning_fog": 10.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.7,
+          "coleman_liau_index": 3.8,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 10.2
+        }
+      },
+      "stylecheck": {
+        "correction": "It has the ability to perform.",
+        "gleu": 0.05555555555555555,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 4.5,
+          "flesch_reading_ease": 73.85,
+          "gunning_fog": 9.07,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.2,
+          "coleman_liau_index": 2.37,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 9.2
+        }
+      }
+    },
+    {
+      "index": 30,
+      "category": "simple_grammar",
+      "original": {
+        "text": "This ones belong to me.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 100.24,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.1,
+          "coleman_liau_index": -0.85,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 7.04
+        }
+      },
+      "ground_truth": {
+        "text": "These belong to me.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.7,
+          "coleman_liau_index": -1.46,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "t5": {
+        "correction": "These ones belong to me.",
+        "gleu": 0.5,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 100.24,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.2,
+          "coleman_liau_index": 0.32,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 7.04
+        }
+      },
+      "stylecheck": {
+        "correction": "These belong to me.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.7,
+          "coleman_liau_index": -1.46,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      }
+    },
+    {
+      "index": 31,
+      "category": "simple_grammar",
+      "original": {
+        "text": "Between you and I, it's wrong.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.2,
+          "coleman_liau_index": 0.45,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "ground_truth": {
+        "text": "Between you and me, it's wrong.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.0,
+          "coleman_liau_index": 1.38,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "t5": {
+        "correction": "True",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -22.21,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "Between you and me, it's wrong.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.0,
+          "coleman_liau_index": 1.38,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      }
+    },
+    {
+      "index": 32,
+      "category": "complex_grammar",
+      "original": {
+        "text": "The reason why is because.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 83.32,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.8,
+          "coleman_liau_index": 2.64,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "ground_truth": {
+        "text": "The reason is that.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.7,
+          "coleman_liau_index": -1.46,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "t5": {
+        "correction": "False",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": -16.41,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "The reason is that.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.7,
+          "coleman_liau_index": -1.46,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      }
+    },
+    {
+      "index": 33,
+      "category": "complex_grammar",
+      "original": {
+        "text": "Whom shall I say is calling?",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.5,
+          "coleman_liau_index": 0.45,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "ground_truth": {
+        "text": "Who shall I say is calling?",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.2,
+          "coleman_liau_index": -0.54,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "t5": {
+        "correction": "True",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -22.21,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "Who should I say is calling?",
+        "gleu": 0.6111111111111112,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.5,
+          "coleman_liau_index": 0.45,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      }
+    },
+    {
+      "index": 34,
+      "category": "style_word_choice",
+      "original": {
+        "text": "Made the decision to attend.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.2,
+          "flesch_reading_ease": 66.4,
+          "gunning_fog": 10.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.7,
+          "coleman_liau_index": 4.96,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 7.04
+        }
+      },
+      "ground_truth": {
+        "text": "Decided to attend.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 9.2,
+          "flesch_reading_ease": 34.59,
+          "gunning_fog": 14.53,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.2,
+          "coleman_liau_index": 3.43,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 9.05
+        }
+      },
+      "t5": {
+        "correction": "Grammar: Made the decision to attend.",
+        "gleu": 0.16666666666666666,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 6.8,
+          "flesch_reading_ease": 56.93,
+          "gunning_fog": 9.07,
+          "smog_index": 0.0,
+          "automated_readability_index": 6.7,
+          "coleman_liau_index": 8.17,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 9.2
+        }
+      },
+      "stylecheck": {
+        "correction": "I decided to attend.",
+        "gleu": 0.6,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 7.2,
+          "flesch_reading_ease": 50.5,
+          "gunning_fog": 11.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.6,
+          "coleman_liau_index": 0.0,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 7.78
+        }
+      }
+    },
+    {
+      "index": 35,
+      "category": "style_word_choice",
+      "original": {
+        "text": "Take into consideration.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 17.4,
+          "flesch_reading_ease": -24.64,
+          "gunning_fog": 14.53,
+          "smog_index": 0.0,
+          "automated_readability_index": 14.6,
+          "coleman_liau_index": 15.03,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 9.05
+        }
+      },
+      "ground_truth": {
+        "text": "Consider.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 20.2,
+          "flesch_reading_ease": -47.99,
+          "gunning_fog": 40.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 21.5,
+          "coleman_liau_index": 1.0,
+          "linsear_write_formula": 0.5,
+          "dale_chall_readability_score": 19.48
+        }
+      },
+      "t5": {
+        "correction": "Take into consideration.",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 17.4,
+          "flesch_reading_ease": -24.64,
+          "gunning_fog": 14.53,
+          "smog_index": 0.0,
+          "automated_readability_index": 14.6,
+          "coleman_liau_index": 15.03,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 9.05
+        }
+      },
+      "stylecheck": {
+        "correction": "You should take into consideration the relevant factors.",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 11.1,
+          "flesch_reading_ease": 29.52,
+          "gunning_fog": 13.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 11.4,
+          "coleman_liau_index": 15.15,
+          "linsear_write_formula": 5.0,
+          "dale_chall_readability_score": 9.95
+        }
+      }
+    },
+    {
+      "index": 36,
+      "category": "simple_grammar",
+      "original": {
+        "text": "Your the best person for this.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.2,
+          "coleman_liau_index": 2.37,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "ground_truth": {
+        "text": "You're the best person for this.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.8,
+          "coleman_liau_index": 3.35,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      },
+      "t5": {
+        "correction": "grammar: Your the best person for this.",
+        "gleu": 0.6363636363636364,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.5,
+          "flesch_reading_ease": 89.75,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 5.75,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 6.24
+        }
+      },
+      "stylecheck": {
+        "correction": "You're the best person for this.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.8,
+          "coleman_liau_index": 3.35,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.3
+        }
+      }
+    },
+    {
+      "index": 37,
+      "category": "simple_grammar",
+      "original": {
+        "text": "Its been a long day.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.9,
+          "flesch_reading_ease": 117.16,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -4.0,
+          "coleman_liau_index": -4.33,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "ground_truth": {
+        "text": "It's been a long day.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.9,
+          "flesch_reading_ease": 117.16,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -3.0,
+          "coleman_liau_index": -4.33,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "t5": {
+        "correction": "False",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.6,
+          "coleman_liau_index": -16.41,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "It's been a long day.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -1.9,
+          "flesch_reading_ease": 117.16,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": -3.0,
+          "coleman_liau_index": -4.33,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      }
+    },
+    {
+      "index": 38,
+      "category": "complex_grammar",
+      "original": {
+        "text": "The data points was analyzed.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.2,
+          "flesch_reading_ease": 66.4,
+          "gunning_fog": 10.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.6,
+          "coleman_liau_index": 6.12,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 13.36
+        }
+      },
+      "ground_truth": {
+        "text": "The data points were analyzed.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.2,
+          "flesch_reading_ease": 66.4,
+          "gunning_fog": 10.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.6,
+          "coleman_liau_index": 7.28,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 13.36
+        }
+      },
+      "t5": {
+        "correction": "True",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -22.21,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "stylecheck": {
+        "correction": "The data points were analyzed.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.2,
+          "flesch_reading_ease": 66.4,
+          "gunning_fog": 10.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.6,
+          "coleman_liau_index": 7.28,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 13.36
+        }
+      }
+    },
+    {
+      "index": 39,
+      "category": "complex_grammar",
+      "original": {
+        "text": "We discussed about the issue.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 83.32,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.6,
+          "coleman_liau_index": 6.12,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 10.2
+        }
+      },
+      "ground_truth": {
+        "text": "We discussed the issue.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.1,
+          "coleman_liau_index": 4.35,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 11.73
+        }
+      },
+      "t5": {
+        "correction": "1.8",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -6.9,
+          "coleman_liau_index": -33.81,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 35.27
+        }
+      },
+      "stylecheck": {
+        "correction": "We discussed the issue.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.1,
+          "coleman_liau_index": 4.35,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 11.73
+        }
+      }
+    },
+    {
+      "index": 40,
+      "category": "style_word_choice",
+      "original": {
+        "text": "At the present time.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -2.3,
+          "flesch_reading_ease": 118.18,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.6,
+          "coleman_liau_index": 0.0,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "ground_truth": {
+        "text": "Currently.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 20.2,
+          "flesch_reading_ease": -47.99,
+          "gunning_fog": 40.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 26.2,
+          "coleman_liau_index": 6.8,
+          "linsear_write_formula": 0.5,
+          "dale_chall_readability_score": 19.48
+        }
+      },
+      "t5": {
+        "correction": "At the present time.",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -2.3,
+          "flesch_reading_ease": 118.18,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.6,
+          "coleman_liau_index": 0.0,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "stylecheck": {
+        "correction": "At present.",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.1,
+          "flesch_reading_ease": 120.21,
+          "gunning_fog": 0.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.1,
+          "coleman_liau_index": -4.51,
+          "linsear_write_formula": 0.0,
+          "dale_chall_readability_score": 0.1
+        }
+      }
+    },
+    {
+      "index": 41,
+      "category": "style_word_choice",
+      "original": {
+        "text": "Is in agreement with.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.8,
+          "coleman_liau_index": 1.45,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "ground_truth": {
+        "text": "Agrees with.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.1,
+          "flesch_reading_ease": 120.21,
+          "gunning_fog": 0.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.5,
+          "coleman_liau_index": -1.61,
+          "linsear_write_formula": 0.0,
+          "dale_chall_readability_score": 11.63
+        }
+      },
+      "t5": {
+        "correction": "Is in agreement with.",
+        "gleu": 0.1,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.8,
+          "coleman_liau_index": 1.45,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "stylecheck": {
+        "correction": "He is in agreement with her.",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.9,
+          "flesch_reading_ease": 99.23,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.5,
+          "coleman_liau_index": 0.45,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 6.57
+        }
+      }
+    },
+    {
+      "index": 42,
+      "category": "simple_grammar",
+      "original": {
+        "text": "Their going to the party.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 83.32,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.9,
+          "coleman_liau_index": 1.48,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "ground_truth": {
+        "text": "They're going to the party.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 83.32,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.7,
+          "coleman_liau_index": 2.64,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      },
+      "t5": {
+        "correction": "grammar: Their going to the party.",
+        "gleu": 0.5555555555555556,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 4.5,
+          "flesch_reading_ease": 73.85,
+          "gunning_fog": 2.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.3,
+          "coleman_liau_index": 5.27,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 6.57
+        }
+      },
+      "stylecheck": {
+        "correction": "They're going to the party.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 83.32,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.7,
+          "coleman_liau_index": 2.64,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 0.25
+        }
+      }
+    },
+    {
+      "index": 43,
+      "category": "simple_grammar",
+      "original": {
+        "text": "The team play tomorrow.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 4.1,
+          "coleman_liau_index": 4.35,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "ground_truth": {
+        "text": "The team plays tomorrow.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.3,
+          "coleman_liau_index": 5.8,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 7.78
+        }
+      },
+      "t5": {
+        "correction": "entailment",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 20.2,
+          "flesch_reading_ease": -47.99,
+          "gunning_fog": 40.4,
+          "smog_index": 0.0,
+          "automated_readability_index": 26.2,
+          "coleman_liau_index": 12.6,
+          "linsear_write_formula": 0.5,
+          "dale_chall_readability_score": 19.48
+        }
+      },
+      "stylecheck": {
+        "correction": "The team plays tomorrow.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 5.3,
+          "coleman_liau_index": 5.8,
+          "linsear_write_formula": 2.0,
+          "dale_chall_readability_score": 7.78
+        }
+      }
+    },
+    {
+      "index": 44,
+      "category": "complex_grammar",
+      "original": {
+        "text": "He is one of the student who.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.1,
+          "flesch_reading_ease": 106.67,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.5,
+          "coleman_liau_index": -1.74,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 6.24
+        }
+      },
+      "ground_truth": {
+        "text": "He is one of the students who.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.1,
+          "flesch_reading_ease": 106.67,
+          "gunning_fog": 2.8,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.9,
+          "coleman_liau_index": -0.87,
+          "linsear_write_formula": 2.5,
+          "dale_chall_readability_score": 6.24
+        }
+      },
+      "t5": {
+        "correction": "Grammar: He is one of the student who.",
+        "gleu": 0.5769230769230769,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 88.74,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": 0.8,
+          "coleman_liau_index": 1.41,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 7.98
+        }
+      },
+      "stylecheck": {
+        "correction": "He is one of the students who are.",
+        "gleu": 0.6923076923076923,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 0.5,
+          "flesch_reading_ease": 105.66,
+          "gunning_fog": 3.2,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.6,
+          "coleman_liau_index": -0.81,
+          "linsear_write_formula": 3.0,
+          "dale_chall_readability_score": 6.01
+        }
+      }
+    },
+    {
+      "index": 45,
+      "category": "complex_grammar",
+      "original": {
+        "text": "The reason is because.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "ground_truth": {
+        "text": "The reason is that.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.7,
+          "coleman_liau_index": -1.46,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "t5": {
+        "correction": "The reason is because.",
+        "gleu": 0.6,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 3.7,
+          "flesch_reading_ease": 75.88,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.9,
+          "coleman_liau_index": 2.9,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "stylecheck": {
+        "correction": "The reason is that.",
+        "gleu": 1.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -0.7,
+          "coleman_liau_index": -1.46,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      }
+    },
+    {
+      "index": 46,
+      "category": "style_word_choice",
+      "original": {
+        "text": "Make a payment of.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 1.3,
+          "flesch_reading_ease": 92.8,
+          "gunning_fog": 1.6,
+          "smog_index": 0.0,
+          "automated_readability_index": -1.9,
+          "coleman_liau_index": -2.91,
+          "linsear_write_formula": 1.0,
+          "dale_chall_readability_score": 0.2
+        }
+      },
+      "ground_truth": {
+        "text": "Pay.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": -3.5,
+          "flesch_reading_ease": 121.22,
+          "gunning_fog": 0.4,
+          "smog_index": 0.0,
+          "automated_readability_index": -2.2,
+          "coleman_liau_index": -28.01,
+          "linsear_write_formula": -0.5,
+          "dale_chall_readability_score": 0.05
+        }
+      },
+      "t5": {
+        "correction": "grammar: Make a payment of.",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 83.32,
+          "gunning_fog": 2.0,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.7,
+          "coleman_liau_index": 2.64,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 7.04
+        }
+      },
+      "stylecheck": {
+        "correction": "Please make a payment of $50 by the end of the month.",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.1,
+          "flesch_reading_ease": 101.6,
+          "gunning_fog": 4.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 1.1,
+          "coleman_liau_index": 1.15,
+          "linsear_write_formula": 5.0,
+          "dale_chall_readability_score": 5.55
+        }
+      }
+    },
+    {
+      "index": 47,
+      "category": "style_word_choice",
+      "original": {
+        "text": "Is dependent on.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.6,
+          "flesch_reading_ease": 59.97,
+          "gunning_fog": 14.53,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.1,
+          "coleman_liau_index": -0.46,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 9.05
+        }
+      },
+      "ground_truth": {
+        "text": "Depends on.",
+        "readability_metrics": {
+          "flesch_kincaid_grade": 2.9,
+          "flesch_reading_ease": 77.91,
+          "gunning_fog": 0.8,
+          "smog_index": 0.0,
+          "automated_readability_index": 3.1,
+          "coleman_liau_index": -4.51,
+          "linsear_write_formula": 0.0,
+          "dale_chall_readability_score": 11.63
+        }
+      },
+      "t5": {
+        "correction": "Is dependent on.",
+        "gleu": 0.16666666666666666,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 5.6,
+          "flesch_reading_ease": 59.97,
+          "gunning_fog": 14.53,
+          "smog_index": 0.0,
+          "automated_readability_index": 2.1,
+          "coleman_liau_index": -0.46,
+          "linsear_write_formula": 1.5,
+          "dale_chall_readability_score": 9.05
+        }
+      },
+      "stylecheck": {
+        "correction": "The outcome is dependent on several factors.",
+        "gleu": 0.0,
+        "readability_metrics": {
+          "flesch_kincaid_grade": 9.6,
+          "flesch_reading_ease": 38.99,
+          "gunning_fog": 8.51,
+          "smog_index": 0.0,
+          "automated_readability_index": 7.6,
+          "coleman_liau_index": 10.74,
+          "linsear_write_formula": 4.5,
+          "dale_chall_readability_score": 10.75
+        }
+      }
+    }
+  ]
+}

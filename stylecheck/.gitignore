@@ -45,8 +45,6 @@ instance/
 flask_session/
 
 # Project specific
-evaluation/results/*.json
-evaluation/charts/*.png
 *.log
 logs/
 .DS_Store
